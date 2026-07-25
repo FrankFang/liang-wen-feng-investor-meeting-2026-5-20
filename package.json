@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "deploy": "rm -rf .deploy && mkdir .deploy && cp index.html index.en.html chapters.js chapters.en.js .deploy/ && pnpm dlx wrangler@latest pages deploy .deploy --project-name liangwenfeng"
+  }
+}
