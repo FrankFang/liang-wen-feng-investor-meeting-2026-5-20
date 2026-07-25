@@ -125,7 +125,7 @@ const CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "So lowering prices first of all won't bring the company more revenue, and it won't bring more value to society either, because everyone is already satisfied with this price. If you make it even cheaper, it won't increase society's happiness much. Yes, OK, but on this issue, in terms of pricing, we certainly are not aiming to"
+        "text": "So lowering prices first of all won't bring the company more revenue, and it won't bring more value to society either, because everyone is already satisfied with this price. If you make it even cheaper, it won't increase society's happiness much. Yes, OK, but on this issue, in terms of pricing, we certainly are not aiming to have the highest revenue or highest profit as our starting point. That's part of our restraint. Because in the short term, if you price higher, you might earn more; but in the long run, it's hard to say. I think restraint is a strategy. For me, restraint is a strategy. It means sometimes you can give up something to gain more other things. The same goes for not open-sourcing. It can be seen as our pressure or our concession."
       }
     ]
   },
@@ -138,10 +138,6 @@ const CHAPTERS = [
     "abstract": "Describes restraint as a long-term strategy: sacrificing some profits in exchange for AGI probability, and the trade-off of not competing for consumer-side traffic last year.",
     "quote": "There are watermelons ahead; what's in front might just be sesame seeds.",
     "paragraphs": [
-      {
-        "type": "p",
-        "text": "Having the highest revenue or highest profit is not our starting point. That's part of our restraint. Because in the short term, if you price higher, you might earn more; but in the long run, it's hard to say. I think restraint is a strategy. For me, restraint is a strategy. It means sometimes you can give up something to gain more other things. The same goes for not open-sourcing. It can be seen as our pressure or our concession."
-      },
       {
         "type": "p",
         "text": "First, this concession makes us happy internally; everyone is happy, employees feel a sense of achievement, and we gain cohesion. Moreover, this concession benefits society, and society is happy, as are other peers and ordinary people. So this restraint, I understand, can increase the probability of us achieving AGI in the long run."
@@ -259,7 +255,7 @@ const CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "So AI cannot replace your employees. But if AI had the ability for continuous learning, like your employees, and it could spend two months learning at the company, then"
+        "text": "So AI cannot replace your employees. But if AI had the ability for continuous learning, like your employees, and it could spend two months learning at the company, then it could replace all humans. So we are still one step away from the next stage: learning to learn. We can understand AI development as a staircase. Last year's step was CoT, or chain-of-thought. Because we discovered that chain-of-thought reasoning allows intelligence to reach a higher level. By thinking on its own, it raises the ceiling and enables AI to do more."
       }
     ]
   },
@@ -272,10 +268,6 @@ const CHAPTERS = [
     "abstract": "Think of AI development as a staircase. From CoT to Agent, each step builds on the last. The next step is continuous learning and the singularity of self-iteration.",
     "quote": "We can understand AI development as a staircase.",
     "paragraphs": [
-      {
-        "type": "p",
-        "text": "But then it could replace all humans. So we are still one step away from the next stage: learning to learn. We can understand AI development as a staircase. Last year's step was CoT, or chain-of-thought. Because we discovered that chain-of-thought reasoning allows intelligence to reach a higher level. By thinking on its own, it raises the ceiling and enables AI to do more."
-      },
       {
         "type": "p",
         "text": "Then we crossed another step. This year's step is Agent, because we found that with an Agent approach, it can handle even more tasks. Its range of capabilities expands, and its intelligence ceiling rises higher. Why is it a staircase? Because each subsequent step builds on the previous ones. Agent relies on CoT, and CoT relies on the step before that-the language model. So no step is wasted."
@@ -330,7 +322,7 @@ const CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "At least on the consumer side last year, we saw that was the case. We didn't put much effort into the consumer side; at one point we even didn't want to maintain those users, but the users just wouldn't leave. Because they really wouldn't go, so they stayed. But slightly... and now this year, the enterprise-side revenue is showing optimistic growth. I think the numbers might be relatively good compared to peers, I estimate. But we didn't put much effort into this; we didn't even..."
+        "text": "At least on the consumer side last year, we saw that was the case. We didn't put much effort into the consumer side; at one point we even didn't want to maintain those users, but the users just wouldn't leave. Because they really wouldn't go, so they stayed. But slightly... and now this year, the enterprise-side revenue is showing optimistic growth. I think the numbers might be relatively good compared to peers, I estimate. But we didn't put much effort into this; we didn't even... do anything; it was just incidental. When deploying internet intelligence, the step toward AGI is something I must take - it's a stepping stone. On the road to AGI, I have to pass this step. So I offer these technologies to everyone via API, without doing anything extra. We are still doing AI; this is a byproduct. I just need a few people to maintain this API, no customer service, no sales, nothing - users come on their own."
       }
     ]
   },
@@ -343,10 +335,6 @@ const CHAPTERS = [
     "abstract": "The consumer and enterprise sides are just incidental byproducts of the pursuit of AGI; the vision itself constitutes an organizational and talent advantage.",
     "quote": "They are all byproducts of our journey toward AGI, intermediate outputs that don't conflict with my pursuit of AGI.",
     "paragraphs": [
-      {
-        "type": "p",
-        "text": "Doing something is just done incidentally. When deploying internet intelligence, the step toward AGI is something I must take - it's a stepping stone. On the road to AGI, I have to pass this step. So I offer these technologies to everyone via API, without doing anything extra. We are still doing AI; this is a byproduct. I just need a few people to maintain this API, no customer service, no sales, nothing - users come on their own."
-      },
       {
         "type": "p",
         "text": "Or, what are considered consumer-side users, both consumer and enterprise sides, are byproducts of our work on AGI, intermediate outputs that don't conflict with my pursuit of AGI. I am not doing it for the consumer side or the enterprise side; we pursue AGI for the sake of AGI, and if this happens to produce something, I monetize it. This is different from other companies. They build models specifically to serve consumer or enterprise users. But for us, the original intent is not that; our original intent is to pursue AGI."
@@ -385,7 +373,7 @@ const CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "I hope I can empower them, or help everyone do this. That's also part of our commercial significance, as mentioned earlier. Provided everyone doesn't interfere..."
+        "text": "I hope I can empower them, or help everyone do this. That's also part of our commercial significance, as mentioned earlier. Provided everyone doesn't interfere... With that in mind, we are very willing to assist and help anyone, even our competitors, including Alibaba, Zhipu, and Moonshot AI, to do better. Because we don't lose anything; we are open source anyway. Open source also means we don't draw clear boundaries-we hope you can reproduce it. If you can't, just ask, and we'll tell you how. That's part of open source; it doesn't matter if you're a competitor. Of course, if you're a partner, we'll do more. But there's no conflict of interest on the big issues."
       }
     ]
   },
@@ -398,10 +386,6 @@ const CHAPTERS = [
     "abstract": "Externally, we only focus on the AGI main line; video generation, world models, and other non-mainline work are left to others. Leads to discussion of the resource gap with the US.",
     "quote": "When dealing with the outside world, our attitude is: we only do the main line of AGI.",
     "paragraphs": [
-      {
-        "type": "p",
-        "text": "With that in mind, we are very willing to assist and help anyone, even our competitors, including Alibaba, Zhipu, and Moonshot AI, to do better. Because we don't lose anything; we are open source anyway. Open source also means we don't draw clear boundaries-we hope you can reproduce it. If you can't, just ask, and we'll tell you how. That's part of open source; it doesn't matter if you're a competitor. Of course, if you're a partner, we'll do more. But there's no conflict of interest on the big issues."
-      },
       {
         "type": "p",
         "text": "When dealing with the outside world, our attitude is: we only do the main line of AGI. That is what I just mentioned: GPT, CoT, Agent, etc. Only the main line. The AI field is vast, and we consider many things not on this main line. For example, 3D, video generation-I think they may not have much to do with the main line of intelligence, so we won't do them."
@@ -531,7 +515,7 @@ const CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "As the long-term commercialization path and product lines get richer, how should we price? We think the most worthwhile thing to focus on right now is still AGI. We need to push AGI forward, to raise the lower bound of intelligence. At this stage, that is more worthwhile than building more product lines or considering more commercialization paths-it's a higher-return path. I think this has been true in the past and will be true for the foreseeable future. That is, if we..."
+        "text": "As the long-term commercialization path and product lines get richer, how should we price? We think the most worthwhile thing to focus on right now is still AGI. We need to push AGI forward, to raise the lower bound of intelligence. At this stage, that is more worthwhile than building more product lines or considering more commercialization paths-it's a higher-return path. I think this has been true in the past and will be true for the foreseeable future. That is, if we spend a lot of time thinking about how to enrich our products, what use is that? What was the commercialization plan we discussed six months ago? It must have been about running ads, then e-commerce, embedding e-commerce into products, and integrating deeply with local services. That's definitely useless because things change too fast. If you are ahead of the curve at this stage and spend a lot of time on commercialization considerations and paths, your product line will have a very short life cycle."
       }
     ]
   },
@@ -544,10 +528,6 @@ const CHAPTERS = [
     "abstract": "Planning a commercialization path too early is useless; decisions rely on consensus rather than personal authority; China may become the production powerhouse in the global AI division of labor.",
     "quote": "We aim for AGI, but we have always been doing commercialization.",
     "paragraphs": [
-      {
-        "type": "p",
-        "text": "We spent a lot of time thinking about how to enrich our products. What was the commercialization plan we discussed six months ago? It must have been about running ads, then e-commerce, embedding e-commerce into products, and integrating deeply with local services. That's definitely useless because things change too fast. If you are ahead of the curve at this stage and spend a lot of time on commercialization considerations and paths, your product line will have a very short life cycle."
-      },
       {
         "type": "p",
         "text": "I think it's not time yet. This is our judgment, and at least our past experience supports it. Over the past three years, if you came to me at any point and talked about commercialization paths or product lines, it would have been a waste of time because you cannot predict or foresee the future. You can foresee very little."
@@ -614,7 +594,7 @@ const CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "But this is changing. Nvidia's CUDA moat is quickly eroding. The reasons for the rapid erosion may be threefold. One is that with AI now, building an ecosystem is much easier than before, because AI can write code."
+        "text": "But this is changing. Nvidia's CUDA moat is quickly eroding. The reasons for the rapid erosion may be threefold. One is that with AI now, building an ecosystem is much easier than before, because AI can write code. We can use AI to build this ecosystem, and then we can build an ecosystem identical to NVIDIA's. First, because of AI; second, because of some new technologies. For example, our team developed a technology called TileLang, which is a high-level language. Using this high-level language to write CUDA operators, we can quickly rewrite NVIDIA's entire ecosystem. Combined with AI, there don't seem to be any obstacles. But it's not finished yet, not completed. However, this technical route seems to have no obstacles."
       }
     ]
   },
@@ -627,10 +607,6 @@ const CHAPTERS = [
     "abstract": "AI and new technologies like TileLang are dismantling NVIDIA's CUDA moat. The ecosystem issues for domestic Chinese chips are expected to turn around within a year.",
     "quote": "There is a historical opportunity for domestic AI chip replacement now.",
     "paragraphs": [
-      {
-        "type": "p",
-        "text": "We can use AI to build this ecosystem, and then we can build an ecosystem identical to NVIDIA's. First, because of AI; second, because of some new technologies. For example, our team developed a technology called TileLang, which is a high-level language. Using this high-level language to write CUDA operators, we can quickly rewrite NVIDIA's entire ecosystem. Combined with AI, there don't seem to be any obstacles. But it's not finished yet, not completed. However, this technical route seems to have no obstacles."
-      },
       {
         "type": "p",
         "text": "Another point: because CUDA evolved from gaming cards, in many aspects, the design of gaming cards and their settings are consistent. CUDA is compatible with gaming cards. In the past, AI computing was a small field, smaller than the gaming card market, so this was reasonable. But now the market for compute cards is larger than gaming cards, so there is no reason for the two to remain coupled. The current trend is that they will no longer be coupled. So dedicated chips, whether from Huawei or NVIDIA itself, will be dedicated chips, not the previous ones."
@@ -685,7 +661,7 @@ const CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "Another question: will we vertically integrate upstream? I hope not. So the question is: will we vertically integrate into upstream applications? We hope not. I hope others do that. I don't want to take everything. I just want to take one piece, the piece I am best at, or the piece we consider the core, and then with users..."
+        "text": "Another question: will we vertically integrate upstream? I hope not. So the question is: will we vertically integrate into upstream applications? We hope not. I hope others do that. I don't want to take everything. I just want to take one piece, the piece I am best at, or the piece we consider the core, and then with users directly related to us, I think many of our industry partners care more about it than we do... that should be their meaning, not for me to interpret. Will we build large-scale clusters ourselves in the future? I think we definitely will. We've been doing that all along-all our clusters are self-built. But whether we will develop our own chips depends on how much benefit there is."
       }
     ]
   },
@@ -698,10 +674,6 @@ const CHAPTERS = [
     "abstract": "Don't make chips, don't do vertical integration, focus on one piece; multimodal is a component, not the main line; scaling is far from its limit.",
     "quote": "I only need to take one piece, the one I'm best at.",
     "paragraphs": [
-      {
-        "type": "p",
-        "text": "For the piece directly related to us, I think many of our industry partners care more about it than we do... that should be their meaning, not for me to interpret. Will we build large-scale clusters ourselves in the future? I think we definitely will. We've been doing that all along-all our clusters are self-built. But whether we will develop our own chips depends on how much benefit there is."
-      },
       {
         "type": "p",
         "text": "Tesla, cultivation... that kind of thing. If you run a power plant, you don't necessarily have to build the generators yourself, right? Power equipment can be made by others; as long as the price is reasonable, why would you build it yourself?"
@@ -760,7 +732,7 @@ const CHAPTERS = [
       },
       {
         "type": "p",
-        "text": "On the contrary, this is part of our vision. Our team members care about cost because they are ordinary people; they know that using these models costs money. They have empathy: since others have to pay to use it, if it's cheaper, they'll be more willing to accept it. So many of our team members hope we can lower the cost even further. But from a business perspective, you wouldn't think that way. From a business standpoint..."
+        "text": "On the contrary, this is part of our vision. Our team members care about cost because they are ordinary people; they know that using these models costs money. They have empathy: since others have to pay to use it, if it's cheaper, they'll be more willing to accept it. So many of our team members hope we can lower the cost even further. But from a business perspective, you wouldn't think that way. From a business standpoint... From a cost or business perspective, this is not the top priority. For both startups and large companies, the cost of this service is not high at all. But I think we want it to be lightweight, I want it to be affordable, especially in the context of China's tight supply of computing power-affordable and usable on domestic Chinese chips."
       }
     ]
   },
@@ -773,10 +745,6 @@ const CHAPTERS = [
     "abstract": "Deconstructing the pricing logic of earning only reasonable profits, and the organizational culture of parallel top-down and bottom-up management without overtime.",
     "quote": "We are very focused, which means we have very few things to do.",
     "paragraphs": [
-      {
-        "type": "p",
-        "text": "From a cost or business perspective, this is not the top priority. For both startups and large companies, the cost of this service is not high at all. But I think we want it to be lightweight, I want it to be affordable, especially in the context of China's tight supply of computing power-affordable and usable on domestic Chinese chips."
-      },
       {
         "type": "p",
         "text": "I think low cost is first of all a result. Our models have indeed been moving toward lower cost in terms of model architecture, which relates to our vision. We still have many algorithmic methods that can further reduce costs."
@@ -910,7 +878,7 @@ const CHAPTERS = [
       },
       {
         "type": "a",
-        "text": "So everyone need not worry about a talent shortage. Also, there are too many companies in China building models now-still too many. The US probably has just three companies, but China has too many building foundational models. In the end, we won't need that many people to build foundational models; it will definitely converge. So resources are also quite scattered, and to some extent wasteful. Let me stop here."
+        "text": "So everyone need not worry about a talent shortage. Also, there are too many companies in China building models now-still too many. The US probably has just three companies, but China has too many building foundational models. In the end, we won't need that many people to build foundational models; it will definitely converge. So resources are also quite scattered, and to some extent wasteful. Let me stop here. Every company wants to do the same thing, but in the US, only three companies are doing it, and resources are concentrated on those three. In China, resources are very fragmented, and each company gets less. I think this will definitely converge, it will, but it takes time, and eventually it will converge."
       }
     ]
   },
@@ -923,10 +891,6 @@ const CHAPTERS = [
     "abstract": "Investors ask whether simulated data can allow models to surpass the upper limit of human experience. Liang Wenfeng cites AlphaGo as an example, saying it can exceed but has limits.",
     "quote": "I think there are two points where it can surpass. For example, in Go, AlphaGo played a move that humans had never seen before.",
     "paragraphs": [
-      {
-        "type": "a",
-        "text": "Every company wants to do the same thing, but in the US, only three companies are doing it, and resources are concentrated on those three. In China, resources are very fragmented, and each company gets less. I think this will definitely converge, it will, but it takes time, and eventually it will converge."
-      },
       {
         "type": "a",
         "text": "We don't need that many companies. Right now, people might think the profit margins on this are very high, so they insist on doing it themselves. But when they realize it might not be that profitable, they might stop. Recently, it certainly isn't that profitable. I don't believe it's that profitable because that would go against objective laws. That means we are at a stage where if there is an extremely high profit margin, it must be against objective laws. We should have reasonable profits. So this is the current state of the industry, and I think it will definitely converge."
@@ -1211,7 +1175,7 @@ const CHAPTERS = [
       },
       {
         "type": "q",
-        "text": "Mr. Liang, I have a question left on the screen, let me read it to you. Actually, I wanted to ask about continuous learning-which you mentioned, and many researchers also mentioned it's an unsolved research problem. Then the coding agent, especially catching up to MILES, is..."
+        "text": "Mr. Liang, I have a question left on the screen, let me read it to you. Actually, I wanted to ask about continuous learning-which you mentioned, and many researchers also mentioned it's an unsolved research problem. Then the coding agent, especially catching up to MILES and scaling to the Office level and MIS level, is a relatively certain goal. For a research problem that hasn't been solved yet and a relatively certain scaling goal, how do you think research resources-especially the talent pool of researchers-should be allocated to achieve the best balance and results?"
       }
     ]
   },
@@ -1224,10 +1188,6 @@ const CHAPTERS = [
     "abstract": "Discussion of research resource allocation logic (CoT doesn't consume resources), product-oriented solutions to the hallucination problem, and the time bottleneck in data labeling.",
     "quote": "Right now, half of our company is labeling data, and half of our core researchers are labeling data.",
     "paragraphs": [
-      {
-        "type": "q",
-        "text": "Scaling to the Office level and MIS level is a relatively certain goal. For a research problem that hasn't been solved yet and a relatively certain scaling goal, how do you think research resources-especially the talent pool of researchers-should be allocated to achieve the best balance and results?"
-      },
       {
         "type": "a",
         "text": "Model Office is a relatively certain goal, but model MIS, I think it's not certain yet-it's just a goal. Model Office, I think, is relatively certain."
@@ -1298,7 +1258,7 @@ const CHAPTERS = [
       },
       {
         "type": "q",
-        "text": "Thanks. Then my third question: We see that Anthropic uses its own models to build its own products, launching many vertical applications in finance, law..."
+        "text": "Thanks. Then my third question: We see that Anthropic uses its own models to build its own products, launching many vertical applications in finance, law... Even in the future, you might move toward the medical field. Do you think at some stage we would consider such vertical applications?"
       }
     ]
   },
@@ -1311,10 +1271,6 @@ const CHAPTERS = [
     "abstract": "Discussion on the priority of Coding Agent, the balance between capital markets and pure research, and how DeepSeek's organizational form has no role model and is self-exploratory.",
     "quote": "First, we have no role model. Every step is based on our actual situation, seeking truth from facts.",
     "paragraphs": [
-      {
-        "type": "q",
-        "text": "Even in the future, you might move toward the medical field. Do you think at some stage we would consider such vertical applications?"
-      },
       {
         "type": "a",
         "text": "I haven't fully figured out what our domestic business model will look like, or what the smoothest path will be. We're not at that stage yet. The situation domestically may differ from abroad. It's still hard to tell what it will be like domestically."
@@ -1385,7 +1341,7 @@ const CHAPTERS = [
       },
       {
         "type": "q",
-        "text": "Mr. Liang, two quick questions. First, you just mentioned MILOS might not be a definite goal, but you'll move in that direction. And you also mentioned activation parameters might, for example..."
+        "text": "Mr. Liang, two quick questions. First, you just mentioned MILOS might not be a definite goal, but you'll move in that direction. And you also mentioned activation parameters might, for example... The next generation might be around 150 to 250 billion parameters. In that case, do you think 150 to 250 B is comparable to O4.7, or could it be comparable to something else? That's the first question."
       }
     ]
   },
@@ -1398,10 +1354,6 @@ const CHAPTERS = [
     "abstract": "Confirms that compiled languages like TileLang bring efficiency gains, not losses, with hardware execution efficiency loss of only 1% to 2%.",
     "quote": "Yes, it's a huge efficiency gain. So this is an opportunity.",
     "paragraphs": [
-      {
-        "type": "q",
-        "text": "The next generation might be around 150 to 250 billion parameters. In that case, do you think 150 to 250 B is comparable to O4.7, or could it be comparable to something else? That's the first question."
-      },
       {
         "type": "q",
         "text": "Second question, you mentioned earlier that we're now using some compiled languages other than CUDA for inference. As I understand, we used to rely on the NVIDIA ecosystem, probably using PTX a lot. Now that we're using more of the TileLang you just mentioned, will that significantly reduce our inference efficiency, or at least in the short term? I'm not sure how you view the efficiency loss from this shift to compiled languages, or whether in the long run it's actually a supplement that improves efficiency?"
