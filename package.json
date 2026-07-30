@@ -1,5 +1,8 @@
 {
   "scripts": {
-    "deploy": "rm -rf .deploy && mkdir .deploy && cp index.html index.en.html chapters.js chapters.en.js .deploy/ && pnpm dlx wrangler@latest pages deploy .deploy --project-name liangwenfeng"
+    "build": "node build.js",
+    "preview": "node build.js && node --run serve",
+    "serve": "npx --yes serve .deploy -p 4173",
+    "deploy": "node build.js && pnpm dlx wrangler@latest pages deploy .deploy --project-name liangwenfeng"
   }
 }
