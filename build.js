@@ -100,6 +100,10 @@ const L = {
       ['整理方式', '语音识别自动转写 · AI 校订分章'],
       ['篇幅', '19 章 · 中英双语'],
     ],
+    notFoundTitle: '页面不存在 · 梁文锋投资者交流会实录',
+    notFoundHeading: '这一页不在这份逐字稿里',
+    notFoundBody: '你访问的地址不存在，可能是链接拼错或已经失效。这份录音稿共 19 章，下方是完整目录。',
+    notFoundHome: '回到首页',
   },
   en: {
     lang: 'en-US', ogLocale: 'en_US', ogLocaleAlt: 'zh_CN',
@@ -145,6 +149,10 @@ const L = {
       ['Method', 'Automatic speech recognition, AI-edited into chapters'],
       ['Length', '19 chapters, Chinese and English'],
     ],
+    notFoundTitle: 'Page not found - Liang Wenfeng Investor Meeting Transcript',
+    notFoundHeading: 'This page is not part of the transcript',
+    notFoundBody: 'The address you followed does not exist — it may be mistyped or out of date. The transcript has 19 chapters; the full index is below.',
+    notFoundHome: 'Back to the homepage',
   },
 };
 
@@ -411,6 +419,43 @@ ${chapterScript(t.fontToggle)}
 `;
 }
 
+// ---------------------------------------------------------------- 404
+
+/**
+ * Cloudflare Pages 只有在存在 404.html 时才会对未匹配路径返回真正的 404；
+ * 缺了它，任意路径都会以 200 返回首页，Google 会判成 soft 404 并可能收录
+ * 无限多个重复 URL。这个页面同时给读者一份可点的章节目录。
+ */
+function notFoundPage(t, chapters) {
+  return `<!doctype html>
+<html lang="${t.lang}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(t.notFoundTitle)}</title>
+<meta name="robots" content="noindex,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%F0%9F%93%BC%3C/text%3E%3C/svg%3E">
+<style>${t.__style}${CHAPTER_CSS}</style>
+</head>
+<body>
+
+<div class="watermark"><span class="wm1">${t.lang === 'zh-CN' ? '机密档案 · 机密档案 · 机密档案' : 'CONFIDENTIAL · CONFIDENTIAL'}</span><span class="wm2">CONFIDENTIAL · CONFIDENTIAL</span></div>
+
+<article class="chapter-page">
+  <div class="page">
+    <div class="timebadge">404</div>
+    <h1 class="chapter-title">${esc(t.notFoundHeading)}</h1>
+    <p class="chapter-abstract">${esc(t.notFoundBody)}</p>
+    <a class="open-in-guide" href="${t.homeHref}">${esc(t.notFoundHome)} →</a>
+  </div>
+</article>
+
+${seoFooter(t, chapters)}
+</body>
+</html>
+`;
+}
+
 // ---------------------------------------------------------------- 首页注入
 
 function homePage(t, html, chapters) {
@@ -530,6 +575,7 @@ function main() {
     });
   }
 
+  write('404.html', notFoundPage(L.zh, zhChapters));
   write('sitemap.xml', sitemap(zhChapters));
   write('robots.txt', ROBOTS);
 
