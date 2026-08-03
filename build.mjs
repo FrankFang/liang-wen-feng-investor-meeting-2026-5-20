@@ -8,10 +8,11 @@
  * 静态章节页是给搜索引擎的主入口：SPA 用 hash 路由（#/ch1），爬虫不会把它当独立
  * URL，而百度等爬虫根本不执行 JS，只靠 SPA 就等于全站只有一页正文。
  */
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = __dirname;
+const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(ROOT, '.deploy');
 const SITE = 'https://liangwenfeng.art';
 const MEETING_DATE = '2026-05-20';
