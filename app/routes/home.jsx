@@ -4,13 +4,15 @@ import { homeGraph, zhChapterUrl, enChapterUrl } from "../seo.js";
 import { CHAPTERS } from "../data/chapters.js";
 import { CHAPTERS as CHAPTERS_EN } from "../data/chapters.en.js";
 
-export function loader({ location }) {
-  const en = isEnPath(location.pathname);
+export function loader({ request }) {
+  // loader 的参数是 { request, params, context }，没有 location。
+  const en = isEnPath(new URL(request.url).pathname);
   return { en, chapters: en ? CHAPTERS_EN : CHAPTERS, t: copy[en ? "en" : "zh"] };
 }
 
-export function meta({ location, data }) {
-  const { en, chapters, t } = data;
+export function meta({ location, loaderData }) {
+  // v8 移除了 MetaArgs.data，改用 loaderData。
+  const { en, chapters, t } = loaderData;
   const url = en ? SITE + "/index.en" : SITE + "/";
   const title = t.homeTitle;
   const desc = t.homeDesc;

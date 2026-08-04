@@ -59,6 +59,7 @@ function breadcrumbNode(items) {
 
 /** 首页：WebSite + Article(hasPart) + Person + ItemList + Breadcrumb */
 export function homeGraph({ t, url, chapters }) {
+  const chapterUrl = t.lang === "en-US" ? enChapterUrl : zhChapterUrl;
   return [
     {
       "@type": "WebSite",

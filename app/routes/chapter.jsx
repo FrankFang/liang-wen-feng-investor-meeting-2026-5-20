@@ -6,20 +6,22 @@ import { CHAPTERS } from "../data/chapters.js";
 import { CHAPTERS as CHAPTERS_EN } from "../data/chapters.en.js";
 import NotFoundContent from "../components/NotFound.jsx";
 
-export function loader({ params, location }) {
-  const en = isEnPath(location.pathname);
+export function loader({ params, request }) {
+  // loader 的参数是 { request, params, context }，没有 location。
+  const en = isEnPath(new URL(request.url).pathname);
   const id = String(params.chapterSlug).replace(/\.en$/, "");
   const chapter = (en ? CHAPTERS_EN : CHAPTERS).find((c) => c.id === id);
   if (!chapter) return data(null, 404);
   return { en, chapter };
 }
 
-export function meta({ location, data }) {
-  if (!data) {
+export function meta({ location, loaderData }) {
+  // v8 移除了 MetaArgs.data，改用 loaderData。
+  if (!loaderData) {
     const t = copy[isEnPath(location.pathname) ? "en" : "zh"];
     return [{ title: t.notFoundTitle }, { name: "robots", content: "noindex,follow" }];
   }
-  const { en, chapter } = data;
+  const { en, chapter } = loaderData;
   const t = copy[en ? "en" : "zh"];
   const url = en ? enChapterUrl(chapter.id) : zhChapterUrl(chapter.id);
   const title = t.chapterTitle(chapter);

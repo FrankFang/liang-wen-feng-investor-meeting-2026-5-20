@@ -113,7 +113,7 @@ body::before{
   transform:rotate(-8deg);
 }
 .masthead-row{display:flex; align-items:center; gap:12px}
-.masthead h1{
+.masthead-title{
   font-size:1.18rem; margin:0; font-weight:700; line-height:1.35;
   letter-spacing:.02em;
 }
@@ -121,7 +121,7 @@ body::before{
   margin:10px 0 0; font-family:var(--mono); font-size:13px; color:var(--ink-dim);
   letter-spacing:.03em; line-height:1.7;
 }
-.shell.collapsed .masthead h1,
+.shell.collapsed .masthead-title,
 .shell.collapsed .masthead .sub,
 .shell.collapsed .searchwrap,
 .shell.collapsed .nav-title-text,

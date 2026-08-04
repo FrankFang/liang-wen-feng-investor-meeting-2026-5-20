@@ -2,7 +2,6 @@ node_modules/
 .claude/
 
 # 构建产物
-.deploy/
 build/
 
 # 本地工具状态

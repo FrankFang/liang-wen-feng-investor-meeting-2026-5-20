@@ -1,5 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link, NavLink, Outlet, useLocation } from "react-router";
+import {
+  Link,
+  Links,
+  Meta,
+  NavLink,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+  useLocation,
+} from "react-router";
 import styles from "./styles.css?url";
 import { FAVICON } from "./seo.js";
 import { copy, fmtTime, isEnPath } from "./i18n.js";
@@ -47,10 +56,18 @@ export function Layout({ children }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* Meta / Links 渲染各路由的 meta() 与 links()，缺了它们 title、canonical、
+            hreflang、JSON-LD 和样式表全都不会出现在 SSR 的 HTML 里。 */}
+        <Meta />
+        <Links />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <script dangerouslySetInnerHTML={{ __html: fontScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <ScrollRestoration />
+        <Scripts />
+      </body>
     </html>
   );
 }
@@ -185,11 +202,13 @@ export default function Root() {
           <div className="masthead">
             <div className="masthead-row">
               <div className="seal">{t.seal}</div>
-              <h1>
+              {/* 侧栏是导航里的站名，不是页面标题：用 h1 会和每页真正的 h1
+                  争抢，章节页就变成两个 h1。 */}
+              <div className="masthead-title">
                 {t.mastheadTitle1}
                 <br />
                 {t.mastheadTitle2}
-              </h1>
+              </div>
             </div>
             <p className="sub">{t.mastheadSub}</p>
             <button className="collapse-btn" id="collapseBtn" title={t.collapseTitle} onClick={() => setCollapsed((v) => !v)}>
